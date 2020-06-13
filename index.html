@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UV-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>cioffi</title>
+  </head>
+  
+  <body>
+    <img src="images/minkelogo_bw.svg" class="responsive-center">
+    <h3 align="center">this page has <a href="https://williamcioffi.github.io/">moved</a>. redirecting in <span id="countdown">5</span> seconds...</h3>
+     
+    <script type="text/javascript">
+      var seconds = 5;
+    
+      function countdown() {
+        seconds = seconds - 1;
+        if (seconds < 0) {
+          window.location = "https://williamcioffi.github.io/";
+        } else {
+          document.getElementById("countdown").innerHTML = seconds;
+          window.setTimeout("countdown()", 1000);
+        }
+      }
+ 
+      countdown();
+    
+    </script>
+    
+  </body>  
+</html>
